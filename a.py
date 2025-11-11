@@ -258,7 +258,7 @@ export default function App() {
             <div className="px-3 py-2 text-sm font-medium border-b">Images ({items.length})</div>
             <ul className="max-h-[60vh] overflow-auto">
               {items.map(it => (
-                <li key={it.id} className={`flex items-center gap-2 px-3 py-2 border-b last:border-b-0 cursor-pointer hover:bg-slate-50 ${selected && selected.id===it.id?"bg-indigo-50/70":''''}`} onClick={()=>setSelectedId(it.id)}>
+                <li key={it.id} className={`flex items-center gap-2 px-3 py-2 border-b last:border-b-0 cursor-pointer hover:bg-slate-50 ${selected && selected.id===it.id ? "bg-indigo-50/70" : ""}`} onClick={()=>setSelectedId(it.id)}>
                   <img src={it.dataUrl} alt="thumb" className="w-10 h-10 object-cover rounded-lg border"/>
                   <div className="truncate">
                     <div className="text-sm font-medium truncate">{it.name}</div>
